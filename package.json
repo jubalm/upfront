@@ -1,0 +1,25 @@
+{
+  "name": "profile-jubal",
+  "version": "0.0.1",
+  "main": "server.js",
+  "engines": {
+    "node": "4.0.0"
+  },
+  "scripts": {
+    "start": "node index",
+    "develop": "nodemon bin/develop"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "eazy-logger": "^2.1.2",
+    "express": "~4.13.1",
+    "lodash": "^3.10.1",
+    "mongoose": "^4.2.7",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "glob": "^6.0.1",
+    "node-sass": "^3.4.2"
+  }
+}

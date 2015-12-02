@@ -1,0 +1,19 @@
+@import "normalize";
+
+$orange: orange;
+$font-family-default: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+body {
+  font: 14px/1.4 $font-family-default;
+}
+a {
+  color: #00b7ff;
+}
+.search_results em {
+  font-style: normal;
+  color: $orange;
+}
+.selected {
+  border-left: 4px solid $orange;
+  padding-left: 5px;
+}

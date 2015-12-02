@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jubal Mabaquiao</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/lib/angular.min.js"></script>
+  <script src="scripts/lib/angular-sanitize.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container" ng-controller="SearchController" ng-init="searchInit()">
+    <div class="search">
+      <input type="text" ng-model="pageSearch" ng-keyup="select($event)" autofocus>
+      <div>{{ searchHint }}</div>
+      <ul class="search_results">
+        <li ng-repeat="result in searchResult" ng-class="{ selected: pageSelected === $index }">
+          <strong ng-bind-html="result.titleHilited || result.title"></strong>
+          <span ng-bind-html="result.contentHilited || result.content"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="scripts/plugins.js"></script>
+  <script src="scripts/app.js"></script>
+
+</body>
+
+</html>
